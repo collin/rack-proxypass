@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/rack_proxypass
+lib/rack_proxypass.rb
+test/test_rack_proxypass.rb
