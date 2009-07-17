@@ -1,12 +1,13 @@
-Engine = Haml::Engine.new open("src/layouts/application.haml").read
 
-proxy_pass '/blog/', 'http://whattech_wp/index.php/' do |doc|
-  @staticmatic = StaticMatic::Base.new(File.dirname(__FILE__))
-  doc = Hpricot(doc)
-  Engine.render self do
-    "#{doc/'head'}#{doc/'#content'}"
-  end
-end
+    Engine = Haml::Engine.new open("src/layouts/application.haml").read
+
+    proxy_pass '/blog/', 'http://whattech_wp/index.php/' do |doc|
+      @staticmatic = StaticMatic::Base.new(File.dirname(__FILE__))
+      doc = Hpricot(doc)
+      Engine.render self do
+        "#{doc/'head'}#{doc/'#content'}"
+      end
+    end
 
 More detailed example: http://whattechnology.com/blog/posts/rack-proxy-pass-powering-this-blog
 
