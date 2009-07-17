@@ -9,7 +9,7 @@
       end
     end
 
-More detailed example: http://whattechnology.com/blog/posts/rack-proxy-pass-powering-this-blog
+[More detailed example](http://whattechnology.com/blog/posts/rack-proxy-pass-powering-this-blog)
 
 (The MIT License)
 
